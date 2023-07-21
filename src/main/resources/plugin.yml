@@ -1,0 +1,6 @@
+name: EggWars
+version: 1.0
+main: dev.carl.eggwars.Main
+commands:
+  game: {}
+  delentity: {}

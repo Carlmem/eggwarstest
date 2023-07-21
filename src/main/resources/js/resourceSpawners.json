@@ -1,0 +1,36 @@
+[
+  {
+    "resourceType":"IRON",
+    "spawnTime":10,
+    "world":"world",
+    "headItem": "IRON_BLOCK",
+    "x":74,
+    "y":51,
+    "z": 24,
+    "item": "IRON_INGOT",
+    "resource": 1
+  },
+
+  {
+    "resourceType":"DIAMOND",
+    "spawnTime":10,
+    "world":"world",
+    "headItem": "DIAMOND_BLOCK",
+    "x":21.5,
+    "y":28,
+    "z": 24.5,
+    "item": "DIAMOND",
+    "resource": 15
+  },
+  {
+    "resourceType":"DIAMOND",
+    "spawnTime":10,
+    "world":"world",
+    "headItem": "DIAMOND_BLOCK",
+    "x":21.5,
+    "y":28,
+    "z": -35.5,
+    "item": "DIAMOND",
+    "resource": 15
+  }
+]
