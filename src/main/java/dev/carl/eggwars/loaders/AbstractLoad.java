@@ -21,7 +21,7 @@ public abstract class AbstractLoad {
             FileReader fileReader = new FileReader(json);
             a = (JsonArray) JsonParser.parseReader(fileReader);
         } catch (FileNotFoundException e) {
-            logger.error("FileNotFoundException OCCURED" + e);
+            logger.error("FileNotFoundException OCCURRED" + e);
             return;
         }
 

@@ -43,9 +43,9 @@ public class TeamLoad {
     }
 
     private Inventory upgradeInventoryMenuCreate() {
-       Inventory inv = Bukkit.createInventory(null, 18, UtilColor.toColor("&6Меню Улучшений"));
-       inv.addItem(sharpnessUpgrade());
-       return inv;
+        Inventory inv = Bukkit.createInventory(null, 18, UtilColor.toColor("&6Меню Улучшений"));
+        inv.addItem(sharpnessUpgrade());
+        return inv;
     }
 
     private ItemStack sharpnessUpgrade() {

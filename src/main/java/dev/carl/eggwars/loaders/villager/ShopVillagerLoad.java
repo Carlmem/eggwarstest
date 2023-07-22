@@ -14,7 +14,7 @@ public class ShopVillagerLoad extends AbstractLoad implements Villagers {
     }
 
     @Override
-    public void objectsLoad(JsonObject person) {
-        villagerLoad(person, shopVillagers);
+    public void objectsLoad(JsonObject jso) {
+        villagerLoad(jso, shopVillagers);
     }
 }

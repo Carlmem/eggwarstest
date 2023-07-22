@@ -1,5 +1,6 @@
 package dev.carl.eggwars;
 
+import dev.carl.eggwars.resource.ResourceSpawner;
 import dev.carl.eggwars.util.UtilColor;
 import lombok.RequiredArgsConstructor;
 import org.bukkit.Bukkit;

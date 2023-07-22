@@ -11,19 +11,20 @@ import java.util.Set;
 import java.util.UUID;
 
 public interface Villagers {
-    default void villagerLoad(JsonObject person, Set<UUID> villagers) {
+    default void villagerLoad(JsonObject jso, Set<UUID> villagers) {
         Location location = new Location(
-                Bukkit.getWorld(person.get("world").getAsString()),
-                person.get("x").getAsDouble(),
-                person.get("y").getAsDouble(),
-                person.get("z").getAsDouble()
+                Bukkit.getWorld(jso.get("world").getAsString()),
+                jso.get("x").getAsDouble(),
+                jso.get("y").getAsDouble(),
+                jso.get("z").getAsDouble(),
+                90,
+                jso.get("pitch").getAsFloat()
         );
-        location.setPitch(person.get("pitch").getAsFloat());
 
         Villager villager = (Villager) location.getWorld().spawnEntity(location, EntityType.VILLAGER);
         villager.setAI(false);
         villager.setInvulnerable(true);
-        villager.setCustomName(UtilColor.toColor(person.get("name").getAsString()));
+        villager.setCustomName(UtilColor.toColor(jso.get("name").getAsString()));
         villager.setCustomNameVisible(true);
 
         villagers.add(villager.getUniqueId());

@@ -9,13 +9,13 @@ import dev.carl.eggwars.loaders.villager.UpgradeVillagerLoad;
 import dev.carl.eggwars.player.EWPlayer;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 
 
 public class Main extends JavaPlugin {
-    private final Map<UUID, EWPlayer> playerMap = new HashMap<>();
+    private final Map<UUID, EWPlayer> playerMap = new ConcurrentHashMap<>();
     public static Main INSTANCE;
     @Override
     public void onEnable() {
